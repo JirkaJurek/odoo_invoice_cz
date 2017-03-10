@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="res_partner_form_cs">
+			<field name="name">res.partner.form.cs</field>
+			<field name="inherit_id" ref="base_vat.view_partner_form"/>
+			<field name="model">res.partner</field>
+			<field name="arch" type="xml">
+				<xpath expr="//div[@name='vat_info']" position="before">
+					<field name="ico" placeholder="např. 47910305 " class="oe_inline"/>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>
